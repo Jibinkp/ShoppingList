@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        /*val db = ShoppingDatabase(this)
+        val db = ShoppingDatabase(this)
         val repository = ShoppingRepository(db)
         val factory = ShoppingViewModelFactory(repository)
-        val viewModel = ViewModelProviders.of(this, factory).get(ShoppingViewModel::class.java)*/
+        val viewModel = ViewModelProviders.of(this, factory).get(ShoppingViewModel::class.java)
     }
 }
