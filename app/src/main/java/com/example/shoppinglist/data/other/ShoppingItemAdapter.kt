@@ -42,8 +42,11 @@ class ShoppingItemAdapter(
         }
 
         holder.ivMinus.setOnClickListener {
-            currentShoppingItem.amount--
-            viewModel.upsert(currentShoppingItem)
+            if (currentShoppingItem.amount > 0) {
+                currentShoppingItem.amount--
+                viewModel.upsert(currentShoppingItem)
+            }
+
         }
     }
 
