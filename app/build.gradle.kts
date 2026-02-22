@@ -48,21 +48,21 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    val room_version = "2.6.1"
+    val room_version = "2.8.4"
     val kodein_version = "6.4.0"
-    val lifecycle_version = "2.0.0"
+    val lifecycle_version = "2.2.0"
 
     // Room and Architectural Components
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0")
-    implementation("androidx.room:room-ktx:2.2.1")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
+    implementation("androidx.room:room-ktx:2.8.4")
     kapt("androidx.room:room-compiler:$room_version")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // New Material Design
     implementation("com.google.android.material:material:1.0.0")

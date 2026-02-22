@@ -10,12 +10,9 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shoppinglist.R
-import com.example.shoppinglist.data.db.ShoppingDatabase
 import com.example.shoppinglist.data.db.entities.ShoppingItem
 import com.example.shoppinglist.data.other.ShoppingItemAdapter
-import com.example.shoppinglist.data.repository.ShoppingRepository
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
